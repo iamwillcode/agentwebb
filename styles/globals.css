@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .display-large {
+    @apply text-[57px] leading-[64px] font-normal;
+  }
+  .display-medium {
+    @apply text-[45px] leading-[52px] font-normal;
+  }
+  .display-small {
+    @apply text-[36px] leading-[44px] font-normal;
+  }
+  .headline-large {
+    @apply text-[32px] leading-[44px] font-normal;
+  }
+  .headline-medium {
+    @apply text-[28px] leading-[36px] font-normal;
+  }
+  .headline-small {
+    @apply text-[24px] leading=[32px] font-normal;
+  }
+  .title-large {
+    @apply text-[22px] leading-[28px] font-normal;
+  }
+  .title-medium {
+    @apply text-[16px] leading-[24px] font-medium;
+  }
+  .title-small {
+    @apply text-[14px] leading-[20px] font-medium;
+  }
+  .label-large {
+    @apply text-[14px] leading-[20px] font-medium;
+  }
+  .label-medium {
+    @apply text-[12px] leading-[16px] font-medium;
+  }
+  .label-small {
+    @apply text-[11px] leading-[16px] font-medium;
+  }
+  .body-large {
+    @apply text-[16px] leading-[24px] font-normal text-gray-600;
+  }
+  .body-medium {
+    @apply text-[14px] leading-[20px] font-normal text-gray-600;
+  }
+  .body-small {
+    @apply text-[12px] leading-[16px] font-normal text-gray-600;
+  }
+}
