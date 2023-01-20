@@ -11,6 +11,7 @@ export default function Home() {
       <main className="space-y-16">
         <section className="mx-auto max-w-7xl sm:px-6 lg:px-8 p-4 lg:p-0">
           <h1 className="text-3xl font-bold">Headline 1</h1>
+          <p className="">We understand the importance of being informed when it comes to making the biggest financial decision of your life. That’s why we provide you with all the information you need to make an informed decision when it comes to real estate transactions.</p>
         </section>
         <section className="mx-auto max-w-7xl sm:px-6 lg:px-8 p-4 lg:p-0">
           <h2 className="text-3xl font-bold">Headline 2</h2>
