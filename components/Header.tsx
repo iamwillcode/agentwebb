@@ -2,19 +2,26 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { HiX, HiMenu } from "react-icons/hi";
 import Link from "next/link";
-import { header_navigation } from "../lib/data"
-
+import { header_navigation } from "../lib/data";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <header className="sticky top-0 flex flex-col min-h-full bg-white shadow z-[999]">
       <Popover className="relative ">
         <div className="wrapper">
-          <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
+          <div className="flex items-center justify-between py-4 md:justify-start">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Link href="/">
                 <span className="sr-only">AgentWebb</span>
-                AW
+                <div className="relative w-8 h-8 ">
+                  <Image
+                    fill
+                    quality={40}
+                    src="/brand/logo.svg"
+                    alt="AgentWebb logo"
+                  />
+                </div>
               </Link>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
@@ -25,13 +32,13 @@ export default function Header() {
             </div>
             <nav className="hidden space-x-10 md:flex">
               {header_navigation.map((item, itemIdx) => (
-                <a
+                <Link
                   key={itemIdx}
                   href={item.href}
-                  className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  className="text-gray-500 body-large hover:text-gray-900"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
@@ -55,7 +62,14 @@ export default function Header() {
                 <div>
                   <Link href="/">
                     <span className="sr-only">AgentWebb</span>
-                    AW
+                    <div className="relative w-8 h-8 ">
+                      <Image
+                        fill
+                        quality={40}
+                        src="/brand/logo.svg"
+                        alt="AgentWebb logo"
+                      />
+                    </div>
                   </Link>
                 </div>
                 <div className="-mr-2">
@@ -65,19 +79,17 @@ export default function Header() {
                   </Popover.Button>
                 </div>
               </div>
-              <div className="pt-5 pb-6">
                 <div className="px-2 space-y-1">
                   {header_navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
+                      className="block px-3 py-2 text-gray-900 rounded-md body-large hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
-              </div>
             </div>
           </Popover.Panel>
         </Transition>
