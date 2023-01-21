@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Hero from "../components/home/hero";
+import Stats from "../components/home/Stats";
+import Core_Features from "../components/home/Core_Features";
 
 export default function Home() {
   return (
@@ -9,26 +12,19 @@ export default function Home() {
         <meta name="description" content="AgentWebb provides a detailed overview of the entire real estate transaction process, from finding a property to closing the deal. With our comprehensive resources, you can be sure to find the answers to all your real estate questions." />
       </Head>
       <main className="space-y-16">
-        <section className="mx-auto max-w-7xl sm:px-6 lg:px-8 p-4 lg:p-0">
-          <h1 className="text-3xl font-bold">Headline 1</h1>
-          <p className="">We understand the importance of being informed when it comes to making the biggest financial decision of your life. That’s why we provide you with all the information you need to make an informed decision when it comes to real estate transactions.</p>
-        </section>
-        <section className="mx-auto max-w-7xl sm:px-6 lg:px-8 p-4 lg:p-0">
-          <h2 className="text-3xl font-bold">Headline 2</h2>
-        </section>
-        <section className="mx-auto max-w-7xl sm:px-6 lg:px-8 p-4 lg:p-0">
-          <h3 className="text-3xl font-bold">Headline 3</h3>
-        </section>
-        <section className="mx-auto max-w-7xl sm:px-6 lg:px-8 p-4 lg:p-0">
-          <h4 className="text-3xl font-bold">Headline 4</h4>
-        </section>
-        <section className="mx-auto max-w-7xl sm:px-6 lg:px-8 p-4 lg:p-0">
+        <Hero />
+        <Stats />
+        <Core_Features/>
+        <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:p-0">
           <h5 className="text-3xl font-bold">Headline 5</h5>
         </section>
-        <section className="mx-auto max-w-7xl sm:px-6 lg:px-8 p-4 lg:p-0">
+        {/*  SECTION ENDS */}
+        <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:p-0">
           <h6 className="text-3xl font-bold">Headline 6</h6>
         </section>
+        {/* SECTION ENDS */}
       </main>
     </>
   );
 }
+
