@@ -31,7 +31,7 @@ const navigation = {
     { name: 'Jobs', href: '#' },
     { name: 'Press', href: '#' },
     { name: 'Accessibility', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Testimonials', href: '`/testimonials' },
   ],
   social: [
     {
