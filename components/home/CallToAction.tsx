@@ -3,7 +3,7 @@ import Link from "next/link";
 /* This example requires Tailwind CSS v3.0+ */
 export default function Example() {
   return (
-    <section className="wrapper">
+    <section className="">
       <div className="relative bg-gray-900">
         <div className="relative overflow-hidden bg-secondary-600 h-80 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
           <img
