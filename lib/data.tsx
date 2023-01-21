@@ -121,6 +121,7 @@ const deciding_to_buy = [
   { title: "Additional Infromation.", path_name:"/" },
 ];
 const articles = [
+  { title: "Get Startedw", path_name:"/" },
   { title: "First Timers", path_name:"/" },
   { title: "Deciding To Buy", path_name:"/" },
   { title: "Deciding To Sell.", path_name:"/" },
