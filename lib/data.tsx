@@ -104,5 +104,27 @@ const header_navigation = [
   { name: "Services", href: "/services" },
   { name: "Contact", href: "/contact" },
 ];
+const deciding_to_buy = [
+  { title: "Things to consider when to buy a home.", path_name:"/" },
+  { title: "Sell Before You Buy.", path_name:"/" },
+  { title: "Selecting An Agent.", path_name:"/" },
+  { title: "Signing The Realtors Contract.", path_name:"/" },
+  { title: "Getting Ready For Visiting.", path_name:"/" },
+  { title: "Searching Properties.", path_name:"/" },
+  { title: "Visiting Properties.", path_name:"/" },
+  { title: "Picking One For Your Needs.", path_name:"/" },
+  { title: "Makking The Offer.", path_name:"/" },
+  { title: "Negotiating The Offer.", path_name:"/" },
+  { title: "Making The Agreement to Purchase Firm..", path_name:"/" },
+  { title: "Lawyers And Closing The Purchase..", path_name:"/" },
+  { title: "Packing And Moving.", path_name:"/" },
+  { title: "Additional Infromation.", path_name:"/" },
+];
+const articles = [
+  { title: "First Timers", path_name:"/" },
+  { title: "Deciding To Buy", path_name:"/" },
+  { title: "Deciding To Sell.", path_name:"/" },
+  { title: "Additional Infromation.", path_name:"/" },
+];
 
-export {perks, navigation, header_navigation }
+export {perks, navigation, header_navigation, deciding_to_buy, articles }
