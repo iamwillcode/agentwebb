@@ -3,15 +3,15 @@ export default function Benifits() {
     <section className="py-16 bg-primary-500">
       <div className="wrapper">
         <div className="w-full">
-          <h4 className="max-w-3xl text-white display-small">
+          <h4 className="max-w-3xl text-white headline-medium lg:display-small">
             Be One Step Ahead - Educate Yourself on the Real Estate Process &
             Look Out For Red Flags!
           </h4>
-          <div className="flex gap-8 mt-4">
-            <div className="text-white w-[600px] h-[400px] bg-gray-300 rounded-xl hover:-index"></div>
-            <div className="text-white w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
-            <div className="text-white w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
-            <div className="text-white w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
+          <div className="flex flex-col gap-8 mt-4 lg:flex-row">
+            <div className="text-white w-full lg:w-[600px] h-[400px] bg-gray-300 rounded-xl hover:-index"></div>
+            <div className="text-white w-full lg:w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
+            <div className="text-white w-full lg:w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
+            <div className="text-white w-full lg:w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
           </div>
           <p className="mt-4 text-white max-w-prose body-large">
             Perhaps the only website that gives you all the information you need
