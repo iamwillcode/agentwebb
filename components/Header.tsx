@@ -7,8 +7,8 @@ import { header_navigation } from "../lib/data"
 
 export default function Header() {
   return (
-    <header className="flex flex-col min-h-full shadow">
-      <Popover className="relative bg-white">
+    <header className="sticky top-0 flex flex-col min-h-full bg-white shadow z-[999]">
+      <Popover className="relative ">
         <div className="wrapper">
           <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
