@@ -20,11 +20,11 @@ export default function hero() {
               transactions.
             </p>
             <div className="flex flex-col justify-start gap-4 mt-4 md:flex-row lg:mt-6 md:justify-center">
-              <Link href="/#" className="btn-primary">
-                Action Goes Here
+              <Link href="/contact" className="btn-primary">
+                Contact AgentWebb
               </Link>
               <Link href="/#" className="btn-outline">
-                Action Goes Here
+                View The Realestate Process
               </Link>
             </div>
           </div>
