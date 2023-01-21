@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Hero from "../components/home/hero";
 import Stats from "../components/home/Stats";
-import Core_Features from "../components/home/Core_Features";
+import Benifits from "../components/home/Benifits";
+import Features from "../components/home/Features";
+import Testimonials from "../components/home/Testimonials";
+import CallToAction from "../components/home/CallToAction";
 
 export default function Home() {
   return (
@@ -9,20 +12,15 @@ export default function Home() {
       <Head>
         <title>AgentWebb</title>
         <meta name="title" content="AgentWebb" />
-        <meta name="description" content="AgentWebb provides a detailed overview of the entire real estate transaction process, from finding a property to closing the deal. With our comprehensive resources, you can be sure to find the answers to all your real estate questions." />
+        <meta name="description" content="Get unbiased and honest information about the real estate buying and selling process. Learn from 25+ years of experience and be ready for any red flags." />
       </Head>
-      <main className="space-y-16">
+      <main className="my-16 space-y-16">
         <Hero />
         <Stats />
-        <Core_Features/>
-        <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:p-0">
-          <h5 className="text-3xl font-bold">Headline 5</h5>
-        </section>
-        {/*  SECTION ENDS */}
-        <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:p-0">
-          <h6 className="text-3xl font-bold">Headline 6</h6>
-        </section>
-        {/* SECTION ENDS */}
+        <Features />
+        <Benifits/>
+        <Testimonials/>
+        <CallToAction/>
       </main>
     </>
   );
