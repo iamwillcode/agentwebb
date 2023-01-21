@@ -1,28 +1,26 @@
 export default function Benifits() {
   return (
-    <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:p-0">
-  <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
-    <div>
-      <h4 className="mb-4 headline-medium">Make your dream home a reality</h4>
-      <p className="mb-5 body-large">
-        Handle your subscriptions and transactions efficiently with the clear overview in Dashboard. Features like the smart search option allow you to quickly find any data you’re looking for.
-      </p>
-      <a href="#" className="btn-primary">Learn More</a>
-    </div>
-    <div className="w-full h-full py-48 bg-gray-200"></div>
-  </div>
-  <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
-    <div className="order-none md:order-2">
-      <h5 className="mb-4 headline-medium">The most comprehensive real estate resource</h5>
-      <p className="mb-5 body-large">
-        Love to code? Next to our ready-made and free plugins you can use our expansive yet simple API; decide how you integrate Payments and build advanced and reliable products yourself from
-        scratch.
-      </p>
-      <a href="#" className="btn-primary">Learn More</a>
-    </div>
-    <div className="w-full h-full py-48 bg-gray-200"></div>
-  </div>
-</section>
-
-  )
+    <section className="py-16 bg-primary-500">
+      <div className="wrapper">
+        <div className="w-full">
+          <h4 className="max-w-3xl text-white display-small">
+            Be One Step Ahead - Educate Yourself on the Real Estate Process &
+            Look Out For Red Flags!
+          </h4>
+          <div className="flex gap-8 mt-4">
+            <div className="text-white w-[600px] h-[400px] bg-gray-300 rounded-xl hover:-index"></div>
+            <div className="text-white w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
+            <div className="text-white w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
+            <div className="text-white w-[600px] h-[400px] bg-gray-300 rounded-xl"></div>
+          </div>
+          <p className="mt-4 text-white max-w-prose body-large">
+            Perhaps the only website that gives you all the information you need
+            about the Real Estate transaction. Un biased and Un-abashed. We give
+            it to you without favoritism of provider, site, realtor or any
+            others.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }
