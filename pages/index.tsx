@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="title" content="AgentWebb" />
         <meta name="description" content="Get unbiased and honest information about the real estate buying and selling process. Learn from 25+ years of experience and be ready for any red flags." />
       </Head>
-      <main className="my-16 space-y-16">
+      <main className="">
         <Hero />
         <Stats />
         <Features />
