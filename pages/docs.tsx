@@ -19,14 +19,14 @@ export default function docs() {
             {/* Replace with your content */}
             <div className="flex items-center w-full gap-4 mt-4">
               <div className="w-1/5 border-4 border-gray-200 border-dashed rounded-lg h-96"></div>
-              <div className="w-full border-4 border-gray-200 border-dashed rounded-lg max-w-[75ch] space-y-8">
-                <p className="body-large">
+              <div className="w-full border-4 border-gray-200 border-dashed rounded-lg max-w-[75ch] prose space-y-8">
+                <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
                   neque eaque veritatis et distinctio, tempore ut enim
                   praesentium blanditiis perspiciatis facilis modi est
                   repudiandae quia at a sapiente. Cumque, quis.
                 </p>
-                <p className="body-large">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
                   omnis assumenda doloribus hic molestias ipsa doloremque sint
                   veritatis consequuntur nostrum soluta esse non, sapiente
@@ -36,13 +36,13 @@ export default function docs() {
                   temporibus neque cumque ratione sed eaque. Placeat tempore
                   fuga nostrum culpa!
                 </p>
-                <p className="body-large">
+                <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
                   neque eaque veritatis et distinctio, tempore ut enim
                   praesentium blanditiis perspiciatis facilis modi est
                   repudiandae quia at a sapiente. Cumque, quis.
                 </p>
-                <p className="body-large">
+                <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
                   neque eaque veritatis et distinctio, tempore ut enim
                   praesentium blanditiis perspiciatis facilis modi est
