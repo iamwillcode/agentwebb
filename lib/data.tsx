@@ -121,11 +121,11 @@ const deciding_to_buy = [
   { title: "Additional Infromation.", path_name:"/slug#article-name" },
 ];
 const articles = [
-  { title: "Get Startedw", path_name:"/slug" },
-  { title: "First Timers", path_name:"/slug" },
-  { title: "Deciding To Buy", path_name:"/slug" },
-  { title: "Deciding To Sell.", path_name:"/slug" },
-  { title: "Additional Infromation.", path_name:"/slug" },
+  { title: "Get Startedw", path_name:"/docs/slug" },
+  { title: "First Timers", path_name:"/docs/slug" },
+  { title: "Deciding To Buy", path_name:"/docs/slug" },
+  { title: "Deciding To Sell.", path_name:"/docs/slug" },
+  { title: "Additional Infromation.", path_name:"/docs/slug" },
 ];
 
 export {perks, navigation, header_navigation, deciding_to_buy, articles }
