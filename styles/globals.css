@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Faustina";
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("/fonts/Faustina-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Faustina";
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: "Italic";
+  src: url("/fonts/Faustina-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
 @layer components {
   .wrapper {
     @apply p-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:p-0;
