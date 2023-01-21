@@ -1,4 +1,4 @@
-export default function Core_Features() {
+export default function Benifits() {
   return (
     <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:p-0">
   <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
