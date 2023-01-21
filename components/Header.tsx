@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="flex flex-col min-h-full shadow">
       <Popover className="relative bg-white">
-        <div className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:p-0">
+        <div className="wrapper">
           <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Link href="/">
