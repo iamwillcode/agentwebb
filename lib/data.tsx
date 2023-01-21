@@ -97,5 +97,12 @@ const navigation = {
     },
   ],
 }
+const header_navigation = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Docs", href: "/docs" },
+  { name: "Services", href: "/services" },
+  { name: "Contact", href: "/contact" },
+];
 
-export {perks, navigation }
+export {perks, navigation, header_navigation }

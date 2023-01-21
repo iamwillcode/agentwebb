@@ -2,13 +2,8 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { HiX, HiMenu } from "react-icons/hi";
 import Link from "next/link";
+import { header_navigation } from "../lib/data"
 
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Infromation", href: "/information" },
-  { name: "Contact", href: "/contact" },
-];
 
 export default function Header() {
   return (
@@ -29,7 +24,7 @@ export default function Header() {
               </Popover.Button>
             </div>
             <nav className="hidden space-x-10 md:flex">
-              {navigation.map((item, itemIdx) => (
+              {header_navigation.map((item, itemIdx) => (
                 <a
                   key={itemIdx}
                   href={item.href}
@@ -72,7 +67,7 @@ export default function Header() {
               </div>
               <div className="pt-5 pb-6">
                 <div className="px-2 space-y-1">
-                  {navigation.map((item) => (
+                  {header_navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
