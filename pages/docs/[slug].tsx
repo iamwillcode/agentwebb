@@ -31,7 +31,7 @@ export default function docs() {
 function Nav_Links() {
   return (
     <>
-      <div className="hidden w-1/5 p-4 border-gray-200 border-dashed rounded-lg lg:block lg:mt-24 bg-gray-50">
+      <div className="hidden w-1/5 p-4 border-gray-200 border-dashed rounded-lg lg:block bg-gray-50">
         <h6 className="title-medium">Realestate Process</h6>
         <ul className="mt-4 space-y-4 body-medium">
           {articles.map((content) => {
@@ -94,7 +94,7 @@ function Article_Content() {
 function Side_Pannel() {
   return (
     <>
-      <div className="hidden w-1/5 p-4 border-gray-200 border-dashed rounded-lg lg:block lg:mt-24 bg-gray-50">
+      <div className="hidden w-1/5 p-4 border-gray-200 border-dashed rounded-lg lg:block bg-gray-50">
         <h6 className="title-medium">Deciding To Buy</h6>
         <ul className="pl-4 mt-2 space-y-1 list-disc body-medium">
           {deciding_to_buy.map((content) => {
