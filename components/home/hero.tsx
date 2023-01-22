@@ -9,15 +9,18 @@ export default function hero() {
         <div className="py-16 wrapper">
           <div className="max-w-4xl text-start md:text-center md:mx-auto">
             <h1 className="display-medium">
-              Un biased and Un-abashed site for the information you need about
-              the Real Estate transaction!
+              First-time buyer or a seasoned investor? AgentWebb helps you make
+              the right decision!
             </h1>
             <p className="mt-6 body-large">
-              We understand the importance of being informed. Especially when it
-              comes to making the biggest financial decision of your life.
-              That&#39;s why we provide you with all the information you need to
-              make an informed decision when it comes to real estate
-              transactions.
+              We are your go-to source for unbiased and un-abashed information
+              to help you make the right decision when it comes to the real
+              estate transaction. Our experienced professional and expertise
+              agent will guide you through the entire process, from finding the
+              right property to closing the deal. With our comprehensive set of
+              resources, you can get the information you need to make the best
+              decisions for your real estate investments. So, don&#39;t wait any
+              longer!
             </p>
             <div className="flex flex-col justify-start gap-4 mt-4 md:flex-row lg:mt-6 md:justify-center">
               <Link href="/contact" className="btn-primary">
