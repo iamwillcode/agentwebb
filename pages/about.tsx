@@ -13,25 +13,32 @@ export default function about() {
           content="Get unbiased and honest information about the real estate buying and selling process. Learn from 25+ years of experience and be ready for any red flags."
         />
       </Head>
-      <main className="my-16 space-y-16">
-        <section className="wrapper">
+      <main className="">
+        <section className="bg-primary-500">
+          <div className="py-24 wrapper ">
           <h1 className="capitalize display-medium">
             successful real estate professional with over 25 years Experience
           </h1>
-          <p className="max-w-4xl mt-5 body-large">
-            Doug is a successful real estate professional with over 25 years of
-            experience. He started his career in residential investment real
-            estate in 1986. In 1997, he transitioned to full-time real estate
-            sales with RE/MAX. To better serve his clients, Doug later joined
-            Right At Home Realty. He takes great pride in the business he has
-            built through the referrals of satisfied clients and the positive
-            feedback he receives through their letters and thank-you cards.
-          </p>
+          </div>
+
         </section>
-        <section className="wrapper">
+        <section className="bg-gray-500 ">
+          <div className="py-24 wrapper">
           <h2 className="display-small">About Douglas John Webb</h2>
+          <p className="max-w-4xl mt-5 body-large">
+            Douglas John Webb is an experienced real estate professional with
+            over 20 years of experience in sales, marketing, property
+            management, and development. A graduate of the University of
+            California, Berkeley, he excels in the legal, financial, and
+            regulatory aspects of real estate transactions. Douglas is dedicated
+            to providing his clients with the highest level of service, and
+            quickly capitalizes on opportunities to ensure his clients have the
+            best experience possible.
+          </p>
+          </div>
         </section>
-        <section className="wrapper">
+        <section className="bg-secondary-200">
+          <div className="py-24 wrapper">
           <h3 className="display-small">About Right & Home Realty</h3>
           <p className="max-w-4xl mt-4 mb-6 body-large">
             Right At Home Realty Inc. is a real estate brokerage founded in
@@ -69,6 +76,7 @@ export default function about() {
                 alt="right at home image"
               />
             </div>
+          </div>
           </div>
         </section>
       </main>
