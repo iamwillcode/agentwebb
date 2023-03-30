@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .wrapper {
+    @apply p-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+}
