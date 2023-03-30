@@ -101,7 +101,7 @@ const header_navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Docs", href: "/docs" },
-  { name: "Listings", href: "/listings" },
+  { name: "Listings", href: "/lristings" },
   { name: "Contact", href: "/contact" },
 ];
 const deciding_to_buy = [
