@@ -12,16 +12,7 @@ export default function index() {
       </Head>
       <Header />
       <main className="">
-        <Hero />
-      </main>
-      <Footer />
-    </>
-  );
-}
-
-function Hero() {
-  return (
-    <>
+      <section>
       <div className="relative overflow-hidden isolate bg-gradient-to-b from-gray-100/20 pt-14">
         <div
           className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-gray-600/10 ring-1 ring-gray-50 sm:-mr-80 lg:-mr-96"
@@ -29,7 +20,7 @@ function Hero() {
         />
         <div className="px-6 py-32 mx-auto max-w-7xl sm:py-40 lg:px-8">
           <div className="max-w-2xl mx-auto lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-            <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
+            <h1 className="max-w-2xl text-4xl font-bold tracking-normal text-gray-900 capitalize sm:text-6xl lg:col-span-2 xl:col-auto">
               Prepare Yourself For the Real Estate transaction process.
             </h1>
             <div className="max-w-xl mt-6 lg:mt-0 xl:col-end-1 xl:row-start-1">
@@ -61,6 +52,10 @@ function Hero() {
         </div>
         <div className="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-white sm:h-32" />
       </div>
+    </section>
+    {/* SECTION END: 01 :: HERO  */}
+    </main>
+      <Footer />
     </>
-  )
+  );
 }
