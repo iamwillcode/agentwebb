@@ -99,7 +99,7 @@ export default function Footer() {
       <div className="wrapper">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-          <Logo classNames="fill-current text-slate-500" />
+          <Logo classNames="fill-current text-black" />
             <p className="text-sm leading-6 text-gray-600">
               Making the world a better place through constructing elegant hierarchies.
             </p>
