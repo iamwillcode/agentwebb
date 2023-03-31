@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { HiOutlineSearch, HiOutlineFire, HiOutlineDeviceTablet } from "react-icons/hi";
+import Link from "next/link";
 
 
 
@@ -12,7 +13,7 @@ export default function index() {
         <title>AgentWebb</title>
       </Head>
       <Header />
-      <main className="my-32 space-y-24 ">
+      <main className="my-32 space-y-32 ">
         <section className="wrapper">
           <div className="relative overflow-hidden isolate bg-gradient-to-b from-gray-100/20 pt-14">
             <div
@@ -81,10 +82,18 @@ export default function index() {
         </section>
         {/* SECTION END: 02 :: FEATURES  */}
         <section className="wrapper">
-          <div className="overflow-hidden bg-black rounded-lg ">
-            <div className="px-4 py-5 space-y-1.5 sm:p-6">
-              <h3 className="text-white headline-medium">Super Awesome Headline!</h3>
-              <p className="max-w-3xl text-white body-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div className="p-12 overflow-hidden bg-gray-700 rounded-3xl ">
+              <div className="space-y-4 text-start">
+                <h3 className="text-white capitalize headline-large">Start your successful real estate transaction today!</h3>
+                <p className="text-gray-300 body-large max-w-prose">Browse our comprehensive resources and gain the knowledge and confidence you need to make informed decisions.</p>
+              </div>
+              <div className="flex justify-start mt-4">
+                <Link
+                  href="/docs"
+                  className="px-3 py-2 tracking-wide text-white uppercase bg-gray-900 rounded-md shadow-sm body-small hover:bg-gray-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+                >
+                  View Documentation
+                </Link>
             </div>
           </div>
         </section>
