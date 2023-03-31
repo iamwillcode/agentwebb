@@ -26,4 +26,49 @@
   .wrapper {
     @apply p-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
   }
+  .display-large {
+    @apply text-[3.563rem] leading-tight tracking-wide font-extrabold capitalize
+  }
+  .display-medium {
+    @apply text-[2.813rem] leading-tight font-extrabold tracking-normal capitalize
+  }
+  .display-small {
+    @apply text-[2.25rem] leading-10 font-extrabold tracking-normal capitalize
+  }
+  .headline-large {
+    @apply text-[2rem] leading-8 tracking-wide font-medium
+  }
+  .headline-medium {
+    @apply text-[1.5rem] leading-8 tracking-wide font-medium
+  }
+  .headline-small {
+    @apply text-[1.5rem] leading-8 tracking-wide font-medium
+  }
+  .title-large {
+    @apply text-[1.375rem] leading-8 tracking-wide font-medium
+  }
+  .title-medium {
+    @apply text-base leading-8 tracking-wide font-medium
+  }
+  .title-small {
+    @apply text-sm leading-8 tracking-wide font-medium
+  }
+  .label-large {
+    @apply text-sm leading-8 tracking-wide
+  }
+  .label-medium {
+    @apply text-xs leading-6 tracking-wide
+  }
+  .label-small {
+    @apply text-[0.688rem] leading-6 tracking-wide
+  }
+  .body-large {
+    @apply text-base leading-8 text-gray-700 tracking-wide
+  }
+  .body-medium {
+    @apply text-sm leading-8 text-gray-700 tracking-wide
+  }
+  .body-small {
+    @apply text-xs leading-6 text-gray-700 tracking-wide
+  }
 }
