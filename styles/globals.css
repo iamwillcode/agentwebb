@@ -1,6 +1,26 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/Roboto.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('/fonts/Roboto-Italic.ttf') format('truetype');
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#__next {
+  min-height: 100%;
+}
 
 @layer base {
   .wrapper {
