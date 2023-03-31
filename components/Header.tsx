@@ -1,7 +1,7 @@
 import { Dialog } from "@headlessui/react";
 import { HiMenu, HiX } from "react-icons/hi"
 import { useState } from "react";
-
+import Logo from "./Logo"
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '#' },
@@ -18,11 +18,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              className="w-auto h-8"
-              src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=600"
-              alt=""
-            />
+            <Logo classNames="fill-current text-slate-500" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -54,11 +50,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="w-auto h-8"
-                src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=600"
-                alt=""
-              />
+              <Logo />
             </a>
             <button
               type="button"

@@ -1,3 +1,5 @@
+import Logo from "./Logo"
+
 const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
@@ -97,11 +99,7 @@ export default function Footer() {
       <div className="wrapper">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <img
-              className="h-7"
-              src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=600"
-              alt="Company name"
-            />
+          <Logo classNames="fill-current text-slate-500" />
             <p className="text-sm leading-6 text-gray-600">
               Making the world a better place through constructing elegant hierarchies.
             </p>
