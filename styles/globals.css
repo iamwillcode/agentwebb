@@ -36,7 +36,7 @@
     @apply text-[2.25rem] leading-10 font-extrabold tracking-normal capitalize
   }
   .headline-large {
-    @apply text-[2rem] leading-8 tracking-wide font-medium
+    @apply text-[2rem] leading-8 tracking-normal font-medium
   }
   .headline-medium {
     @apply text-[1.5rem] leading-8 tracking-wide font-medium
@@ -63,12 +63,12 @@
     @apply text-[0.688rem] leading-6 tracking-wide
   }
   .body-large {
-    @apply text-base leading-8 text-gray-700 tracking-wide
+    @apply text-base leading-6 tracking-wide
   }
   .body-medium {
-    @apply text-sm leading-8 text-gray-700 tracking-wide
+    @apply text-sm leading-6 tracking-wide
   }
   .body-small {
-    @apply text-xs leading-6 text-gray-700 tracking-wide
+    @apply text-xs leading-6 tracking-wide
   }
 }
