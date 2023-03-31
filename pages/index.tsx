@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { HiOutlineHeart, HiOutlineFire, HiOutlineInboxIn } from "react-icons/hi";
+import { HiOutlineSearch, HiOutlineFire, HiOutlineDeviceTablet } from "react-icons/hi";
 
 
 
@@ -58,41 +58,43 @@ export default function index() {
         <section className="wrapper">
           <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3 ">
             <div>
-              <HiOutlineHeart className="w-8 h-8 mb-4" />
-              <h3 className="mb-3 capitalize title-large">Unify your payments stack</h3>
+              <HiOutlineSearch className="w-8 h-8 mb-4" />
+              <h3 className="mb-3 capitalize title-large">Real Estate Made Simple</h3>
               <p className="body-medium">
-                Manage all your online and offline sales in one place with a single integration, simplifying reporting and reconciliation. Terminal works seamlessly with Payments, Connect, and Billing.
+                Don&#39;t let the complexities of buying and selling property overwhelm you. With our unbiased and comprehensive real estate resource, you&#39;ll have all the information you need to navigate the process..
               </p>
             </div>
             <div>
               <HiOutlineFire className="w-8 h-8 mb-4" />
-              <h3 className="mb-3 capitalize title-large">Own your in-store experience</h3>
+              <h3 className="mb-3 capitalize title-large">Get Ahead of the Game!</h3>
               <p className="body-medium">
-                Provide a seamless customer experience across channels, like reserving online and picking up in store. Our SDKs make it easy to integrate into your own applications to accept
-                payments.
-              </p>
+                Stay informed and one step ahead of the competition with our expert advice and insider tips. We&#39;ll equip you with everything you need to make informed decisions and avoid common pitfalls              </p>
             </div>
             <div>
-              <HiOutlineInboxIn className="w-8 h-8 mb-4" />
-              <h3 className="mb-3 capitalize title-large">Grow your platform’s revenue</h3>
+              <HiOutlineDeviceTablet className="w-8 h-8 mb-4" />
+              <h3 className="mb-3 capitalize title-large">Power Available On Finger Tips</h3>
               <p className="body-medium">
-                Add in-person payments to your platform or marketplace. Using Terminal with Connect, you can onboard users for online and in-person payments, and unify their payouts across channels.
+                Our comprehensive and unbiased resource provides all the facts you need to know before you start. With our expert guidance, you&#39;ll be equipped to make informed decisions and achieve a successful transaction.
               </p>
             </div>
           </div>
         </section>
         {/* SECTION END: 02 :: FEATURES  */}
         <section className="wrapper">
-          <div className="w-full h-auto px-8 py-16 space-y-2 bg-black rounded-xl">
-            <h3 className="text-white headline-large">Super Awesome Headline Goes Here!s</h3>
-            <p className="max-w-3xl text-white body-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <div className="overflow-hidden bg-black rounded-lg ">
+            <div className="px-4 py-5 space-y-1.5 sm:p-6">
+              <h3 className="text-white headline-medium">Super Awesome Headline!</h3>
+              <p className="max-w-3xl text-white body-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
         </section>
         {/* SECTION END: 03 :: CALL TO ACTION  */}
         <section className="wrapper">
-          <div className="w-full h-auto px-8 py-16 space-y-2 bg-black rounded-xl">
-            <h4 className="text-white headline-large">Super Awesome Headline Goes Here!s</h4>
-            <p className="max-w-3xl text-white body-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <div className="overflow-hidden bg-black rounded-lg ">
+            <div className="px-4 py-5 space-y-1.5 sm:p-6">
+              <h3 className="text-white headline-medium">Super Awesome Headline!</h3>
+              <p className="max-w-3xl text-white body-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
         </section>
         {/* SECTION END: 04 :: CALL TO ACTION 2  */}
