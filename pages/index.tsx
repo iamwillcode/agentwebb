@@ -111,25 +111,32 @@ export default function index() {
             </div>
           </section>
           {/* SECTION END: 02 :: FEATURES  */}
-          <section className="wrapper">
-            <div className="p-12 overflow-hidden bg-slate-700 rounded-3xl ">
-              <div className="space-y-4 text-start">
-                <h3 className="text-white capitalize headline-medium">
-                  Start your successful real estate transaction today!
-                </h3>
-                <p className="text-slate-300 body-large max-w-prose">
-                  Browse our comprehensive resources and gain the knowledge and
-                  confidence you need to make informed decisions.
+          <section className="wrapper rounded-3xl">
+            <div className="bg-slate-700 rounded-3xl">
+            <div className="px-6 py-24 sm:px-6 sm:py-24 lg:px-8">
+              <div className="max-w-2xl mx-auto text-center">
+                <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Boost your productivity.
+                  <br />
+                  Start using our app today.
+                </h2>
+                <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-slate-200">
+                  Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
+                  commodo do ea.
                 </p>
+                <div className="flex items-center justify-center mt-10 gap-x-6">
+                  <a
+                    href="#"
+                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-600 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    Get started
+                  </a>
+                  <a href="#" className="text-sm font-semibold leading-6 text-white">
+                    Learn more <span aria-hidden="true">→</span>
+                  </a>
+                </div>
               </div>
-              <div className="flex justify-start mt-4">
-                <Link
-                  href="/docs"
-                  className="px-3 py-2 tracking-wide text-white uppercase rounded-md shadow-sm bg-slate-900 body-small hover:bg-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
-                >
-                  View Documentation
-                </Link>
-              </div>
+            </div>
             </div>
           </section>
           {/* SECTION END: 03 :: CALL TO ACTION  */}
@@ -143,27 +150,51 @@ export default function index() {
               ))}
             </ul>
             <div className="flex items-center gap-24 mt-4">
-            <div className="w-[720px] mt-3 bg-gray-200 h-[500px] rounded-3xl"></div>
-                <div className=" max-w-prose">
+              <div className="w-[720px] mt-3 bg-gray-200 h-[500px] rounded-3xl"></div>
+              <div className=" max-w-prose">
                 <h4 className="headline-small">Feature 01</h4>
                 <p className="body-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur dicta, minus quam et cum sed libero fuga. Rerum, ullam.</p>
 
-                </div>
+              </div>
             </div>
           </section>
           {/* SECTION END: 04 :: CALL TO ACTION  */}
-
           <section className="wrapper">
-            <div className="p-12 overflow-hidden bg-black rounded-3xl">
-              <div className="px-4 py-5 space-y-1.5 sm:p-6">
-                <h3 className="text-slate-50 headline-medium">
-                  Keep Yourself Infromed With Latest Trends In The Realestate
-                  Market!
-                </h3>
-                <p className="max-w-3xl text-slate-300 body-large">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+            <div className="py-16 bg-slate-700 sm:py-24 lg:py-32 rounded-3xl">
+              <div className="grid grid-cols-1 gap-10 px-6 mx-auto max-w-7xl lg:grid-cols-12 lg:gap-8 lg:px-8">
+                <div className="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
+                  <h2 className="inline sm:block lg:inline xl:block">Want product news and updates?</h2>{' '}
+                  <p className="inline sm:block lg:inline xl:block">Sign up for our newsletter.</p>
+                </div>
+                <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
+                  <div className="flex gap-x-4">
+                    <label htmlFor="email-address" className="sr-only">
+                      Email address
+                    </label>
+                    <input
+                      id="email-address"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      required
+                      className="min-w-0 flex-auto rounded-md border-0 bg-white/10 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-white/75 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                      placeholder="Enter your email"
+                    />
+                    <button
+                      type="submit"
+                      className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-600 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                  <p className="mt-4 text-sm leading-6 text-gray-300">
+                    We care about your data. Read our{' '}
+                    <a href="#" className="font-semibold text-white hover:text-slate-50">
+                      privacy&nbsp;policy
+                    </a>
+                    .
+                  </p>
+                </form>
               </div>
             </div>
           </section>
