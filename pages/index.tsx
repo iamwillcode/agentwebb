@@ -1,10 +1,19 @@
 import Head from "next/head";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { HiOutlineSearch, HiOutlineFire, HiOutlineDeviceTablet } from "react-icons/hi";
+import {
+  HiOutlineSearch,
+  HiOutlineFire,
+  HiOutlineDeviceTablet,
+} from "react-icons/hi";
 import Link from "next/link";
 
-
+const items = [
+  { id: 1, headline: "Feature 01" },
+  { id: 2, headline: "Feature 02" },
+  { id: 3, headline: "Feature 03" },
+  // More items...
+];
 
 export default function index() {
   return (
@@ -28,11 +37,11 @@ export default function index() {
                   </h1>
                   <div className="max-w-xl mt-6 lg:mt-0 xl:col-end-1 xl:row-start-1">
                     <p className="body-large">
-                      Unbiased and comprehensive information about the real estate
-                      transaction process. The site provides factual details about
-                      buying and selling property and aims to prepare visitors to
-                      be one step ahead in the process, alert to any potential red
-                      flags.
+                      Unbiased and comprehensive information about the real
+                      estate transaction process. The site provides factual
+                      details about buying and selling property and aims to
+                      prepare visitors to be one step ahead in the process,
+                      alert to any potential red flags.
                     </p>
                     <div className="flex items-center mt-10 gap-x-6">
                       <a
@@ -41,8 +50,12 @@ export default function index() {
                       >
                         View Documentation
                       </a>
-                      <a href="#" className="tracking-wide uppercase text-slate-900 body-small">
-                        Get In Touch With An Agent <span aria-hidden="true">→</span>
+                      <a
+                        href="#"
+                        className="tracking-wide uppercase text-slate-900 body-small"
+                      >
+                        Get In Touch With An Agent{" "}
+                        <span aria-hidden="true">→</span>
                       </a>
                     </div>
                   </div>
@@ -61,22 +74,38 @@ export default function index() {
             <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3 ">
               <div>
                 <HiOutlineSearch className="w-8 h-8 mb-4" />
-                <h3 className="mb-3 capitalize title-large">Real Estate Made Simple</h3>
+                <h3 className="mb-3 capitalize title-large">
+                  Real Estate Made Simple
+                </h3>
                 <p className="body-medium">
-                  Don&#39;t let the complexities of buying and selling property overwhelm you. With our unbiased and comprehensive real estate resource, you&#39;ll have all the information you need to navigate the process..
+                  Don&#39;t let the complexities of buying and selling property
+                  overwhelm you. With our unbiased and comprehensive real estate
+                  resource, you&#39;ll have all the information you need to
+                  navigate the process..
                 </p>
               </div>
               <div>
                 <HiOutlineFire className="w-8 h-8 mb-4" />
-                <h3 className="mb-3 capitalize title-large">Get Ahead of the Game!</h3>
+                <h3 className="mb-3 capitalize title-large">
+                  Get Ahead of the Game!
+                </h3>
                 <p className="body-medium">
-                  Stay informed and one step ahead of the competition with our expert advice and insider tips. We&#39;ll equip you with everything you need to make informed decisions and avoid common pitfalls              </p>
+                  Stay informed and one step ahead of the competition with our
+                  expert advice and insider tips. We&#39;ll equip you with
+                  everything you need to make informed decisions and avoid
+                  common pitfalls{" "}
+                </p>
               </div>
               <div>
                 <HiOutlineDeviceTablet className="w-8 h-8 mb-4" />
-                <h3 className="mb-3 capitalize title-large">Power Available On Finger Tips</h3>
+                <h3 className="mb-3 capitalize title-large">
+                  Power Available On Finger Tips
+                </h3>
                 <p className="body-medium">
-                  Our comprehensive and unbiased resource provides all the facts you need to know before you start. With our expert guidance, you&#39;ll be equipped to make informed decisions and achieve a successful transaction.
+                  Our comprehensive and unbiased resource provides all the facts
+                  you need to know before you start. With our expert guidance,
+                  you&#39;ll be equipped to make informed decisions and achieve
+                  a successful transaction.
                 </p>
               </div>
             </div>
@@ -85,8 +114,13 @@ export default function index() {
           <section className="wrapper">
             <div className="p-12 overflow-hidden bg-slate-700 rounded-3xl ">
               <div className="space-y-4 text-start">
-                <h3 className="text-white capitalize headline-large">Start your successful real estate transaction today!</h3>
-                <p className="text-slate-300 body-large max-w-prose">Browse our comprehensive resources and gain the knowledge and confidence you need to make informed decisions.</p>
+                <h3 className="text-white capitalize headline-medium">
+                  Start your successful real estate transaction today!
+                </h3>
+                <p className="text-slate-300 body-large max-w-prose">
+                  Browse our comprehensive resources and gain the knowledge and
+                  confidence you need to make informed decisions.
+                </p>
               </div>
               <div className="flex justify-start mt-4">
                 <Link
@@ -100,10 +134,36 @@ export default function index() {
           </section>
           {/* SECTION END: 03 :: CALL TO ACTION  */}
           <section className="wrapper">
-            <div className="overflow-hidden bg-black rounded-lg ">
+            <ul role="list" className="grid w-full grid-cols-3 gap-3">
+              {items.map((item) => (
+                <li key={item.id} className="px-2 py-2 overflow-hidden border-b sm:rounded-md sm:px-6">
+                  <h4 className="title-medium">{item.headline}</h4>
+                  <p className="body-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure totam eius aliquid reiciendis!</p>
+                </li>
+              ))}
+            </ul>
+            <div className="flex items-center gap-24 mt-4">
+            <div className="w-[720px] mt-3 bg-gray-200 h-[500px] rounded-3xl"></div>
+                <div className=" max-w-prose">
+                <h4 className="headline-small">Feature 01</h4>
+                <p className="body-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur dicta, minus quam et cum sed libero fuga. Rerum, ullam.</p>
+
+                </div>
+            </div>
+          </section>
+          {/* SECTION END: 04 :: CALL TO ACTION  */}
+
+          <section className="wrapper">
+            <div className="p-12 overflow-hidden bg-black rounded-3xl">
               <div className="px-4 py-5 space-y-1.5 sm:p-6">
-                <h3 className="text-white headline-medium">Super Awesome Headline!</h3>
-                <p className="max-w-3xl text-white body-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 className="text-slate-50 headline-medium">
+                  Keep Yourself Infromed With Latest Trends In The Realestate
+                  Market!
+                </h3>
+                <p className="max-w-3xl text-slate-300 body-large">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
             </div>
           </section>
