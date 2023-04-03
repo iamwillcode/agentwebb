@@ -212,9 +212,9 @@ export default function index() {
               <p className="body-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsam quae natus dolores laborum adipisci nulla sit dignissimos quos unde?</p>
             </div>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              <BlogCard />
-              <BlogCard />
-              <BlogCard />
+              <BlogCard title="Real Estate Made Simple" body="Don't let the complexities of buying and selling property overwhelm you. With our unbiased and comprehensive real estate resource, you'll have all the information you need to navigate the process.." linkName="View Article" link="/blog/project-slug" />
+              <BlogCard title="Real Estate Made Simple" body="Don't let the complexities of buying and selling property overwhelm you. With our unbiased and comprehensive real estate resource, you'll have all the information you need to navigate the process.." linkName="View Article" link="/blog/project-slug" />
+              <BlogCard title="Real Estate Made Simple" body="Don't let the complexities of buying and selling property overwhelm you. With our unbiased and comprehensive real estate resource, you'll have all the information you need to navigate the process.." linkName="View Article" link="/blog/project-slug" />
             </div>
           </section>
         </div>
