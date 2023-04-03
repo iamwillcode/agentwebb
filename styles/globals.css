@@ -39,7 +39,7 @@
     @apply text-[2rem] leading-8 tracking-normal font-medium
   }
   .headline-medium {
-    @apply text-[1.5rem] leading-8 tracking-wide font-medium
+    @apply text-[1.5rem] leading-8 tracking-normal font-medium
   }
   .headline-small {
     @apply text-[1.5rem] leading-8 tracking-wide font-medium

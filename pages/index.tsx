@@ -7,7 +7,6 @@ import {
   HiOutlineFire,
   HiOutlineDeviceTablet,
 } from "react-icons/hi";
-import Link from "next/link";
 
 const items = [
   { id: 1, headline: "Feature 01" },
