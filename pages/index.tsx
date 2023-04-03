@@ -21,6 +21,8 @@ export default function index() {
     <>
       <Head>
         <title>AgentWebb</title>
+        <meta name="title" content="AgentWebb" />
+        <meta name="description" content="Offer unbiased insights into the real estate transactions, to help you, understand, identify potential red flags to help you make informed decisions." />
       </Head>
       <Header />
       <main className="bg-slate-50">
@@ -62,8 +64,8 @@ export default function index() {
                   </div>
                   <div className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 relative">
                     <Image
-                    fill
-                    quality={40}
+                      fill
+                      quality={40}
                       src="/dummy-image.png"
                       alt="placehodler iamge"
                       className="object-cover object-center "
@@ -156,7 +158,7 @@ export default function index() {
             </ul>
             <div className="flex items-center gap-24 mt-4">
               <div className="w-[720px] mt-3 bg-gray-200 h-[500px] relative rounded-3xl">
-                <Image fill quality={40} src="/dummy-image.png" alt="placeholder-image"/>
+                <Image fill quality={40} src="/dummy-image.png" alt="placeholder-image" />
               </div>
               <div className=" max-w-prose">
                 <h4 className="headline-small">Feature 01</h4>
