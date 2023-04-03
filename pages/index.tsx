@@ -7,6 +7,7 @@ import {
   HiOutlineFire,
   HiOutlineDeviceTablet,
 } from "react-icons/hi";
+import Image from "next/image";
 
 const items = [
   { id: 1, headline: "Feature 01" },
@@ -59,11 +60,15 @@ export default function index() {
                       </a>
                     </div>
                   </div>
-                  <img
-                    src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
-                    alt=""
-                    className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-                  />
+                  <div className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 relative">
+                    <Image
+                    fill
+                    quality={40}
+                      src="/dummy-image.png"
+                      alt="placehodler iamge"
+                      className="object-cover object-center "
+                    />
+                  </div>
                 </div>
               </div>
               <div className="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-slate-50 sm:h-32" />
@@ -150,7 +155,9 @@ export default function index() {
               ))}
             </ul>
             <div className="flex items-center gap-24 mt-4">
-              <div className="w-[720px] mt-3 bg-gray-200 h-[500px] rounded-3xl"></div>
+              <div className="w-[720px] mt-3 bg-gray-200 h-[500px] relative rounded-3xl">
+                <Image fill quality={40} src="/dummy-image.png" alt="placeholder-image"/>
+              </div>
               <div className=" max-w-prose">
                 <h4 className="headline-small">Feature 01</h4>
                 <p className="body-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur dicta, minus quam et cum sed libero fuga. Rerum, ullam.</p>
