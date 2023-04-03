@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import BlogCard from "@/components/BlogCard";
 import {
   HiOutlineSearch,
   HiOutlineFire,
@@ -74,9 +75,9 @@ export default function index() {
             <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3 ">
               <div>
                 <HiOutlineSearch className="w-8 h-8 mb-4" />
-                <h3 className="mb-3 capitalize title-large">
+                <h2 className="mb-3 capitalize title-large">
                   Real Estate Made Simple
-                </h3>
+                </h2>
                 <p className="body-medium">
                   Don&#39;t let the complexities of buying and selling property
                   overwhelm you. With our unbiased and comprehensive real estate
@@ -86,9 +87,9 @@ export default function index() {
               </div>
               <div>
                 <HiOutlineFire className="w-8 h-8 mb-4" />
-                <h3 className="mb-3 capitalize title-large">
+                <h2 className="mb-3 capitalize title-large">
                   Get Ahead of the Game!
-                </h3>
+                </h2>
                 <p className="body-medium">
                   Stay informed and one step ahead of the competition with our
                   expert advice and insider tips. We&#39;ll equip you with
@@ -98,9 +99,9 @@ export default function index() {
               </div>
               <div>
                 <HiOutlineDeviceTablet className="w-8 h-8 mb-4" />
-                <h3 className="mb-3 capitalize title-large">
+                <h2 className="mb-3 capitalize title-large">
                   Power Available On Finger Tips
-                </h3>
+                </h2>
                 <p className="body-medium">
                   Our comprehensive and unbiased resource provides all the facts
                   you need to know before you start. With our expert guidance,
@@ -113,30 +114,30 @@ export default function index() {
           {/* SECTION END: 02 :: FEATURES  */}
           <section className="wrapper rounded-3xl">
             <div className="bg-slate-700 rounded-3xl">
-            <div className="px-6 py-24 sm:px-6 sm:py-24 lg:px-8">
-              <div className="max-w-2xl mx-auto text-center">
-                <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Boost your productivity.
-                  <br />
-                  Start using our app today.
-                </h2>
-                <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-slate-200">
-                  Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
-                  commodo do ea.
-                </p>
-                <div className="flex items-center justify-center mt-10 gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-600 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                  >
-                    Get started
-                  </a>
-                  <a href="#" className="text-sm font-semibold leading-6 text-white">
-                    Learn more <span aria-hidden="true">→</span>
-                  </a>
+              <div className="px-6 py-24 sm:px-6 sm:py-24 lg:px-8">
+                <div className="max-w-2xl mx-auto text-center">
+                  <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    Boost your productivity.
+                    <br />
+                    Start using our app today.
+                  </h3>
+                  <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-slate-200">
+                    Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
+                    commodo do ea.
+                  </p>
+                  <div className="flex items-center justify-center mt-10 gap-x-6">
+                    <a
+                      href="#"
+                      className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-600 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >
+                      Get started
+                    </a>
+                    <a href="#" className="text-sm font-semibold leading-6 text-white">
+                      Learn more <span aria-hidden="true">→</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
           </section>
           {/* SECTION END: 03 :: CALL TO ACTION  */}
@@ -163,7 +164,7 @@ export default function index() {
             <div className="py-16 bg-slate-700 sm:py-24 lg:py-32 rounded-3xl">
               <div className="grid grid-cols-1 gap-10 px-6 mx-auto max-w-7xl lg:grid-cols-12 lg:gap-8 lg:px-8">
                 <div className="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
-                  <h2 className="inline sm:block lg:inline xl:block">Want product news and updates?</h2>{' '}
+                  <h5 className="inline sm:block lg:inline xl:block">Want product news and updates?</h5>{' '}
                   <p className="inline sm:block lg:inline xl:block">Sign up for our newsletter.</p>
                 </div>
                 <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
@@ -199,6 +200,17 @@ export default function index() {
             </div>
           </section>
           {/* SECTION END: 04 :: CALL TO ACTION 2  */}
+          <section className="wrapper">
+            <div className="mb-8 space-y-1.5">
+              <h6 className="headline-medium">Stay Up To Date With The Realestate Transation News</h6>
+              <p className="body-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsam quae natus dolores laborum adipisci nulla sit dignissimos quos unde?</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+            </div>
+          </section>
         </div>
       </main>
       <Footer />
