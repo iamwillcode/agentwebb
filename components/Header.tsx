@@ -2,10 +2,11 @@ import { Dialog } from "@headlessui/react";
 import { HiMenu, HiX } from "react-icons/hi"
 import { useState } from "react";
 import Logo from "./Logo"
+import Link from "next/link";
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '#' },
-  { name: 'Transactions', href: '#' },
+  { name: 'About', href: '/about' },
+  { name: 'Transactions', href: "/transactions" },
   { name: 'Blog', href: '#' },
   { name: 'Contact Us', href: '#' },
 ]
@@ -13,13 +14,13 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-slate-50">
+    <header className="absolute inset-x-0 top-0 z-50">
       <nav className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <Logo classNames="fill-current text-black" />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
