@@ -35,7 +35,9 @@ function Testimonials() {
   return (
     <section className="relative bg-gray-200 wrapper">
       <div className=" lg:max-w-[70ch] lg:mx-auto">
-        <img className="h-12 mx-auto" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" />
+        <div className="relative h-12 mx-auto">
+        <Image fill quality={50} className="" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" />
+        </div>
         <figure className="mt-10">
           <blockquote className="text-xl font-semibold leading-8 text-center text-gray-900 sm:text-2xl sm:leading-9">
             <p>
