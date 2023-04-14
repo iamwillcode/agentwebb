@@ -273,7 +273,7 @@ function SignUpToProgram() {
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="max-w-2xl mx-auto space-y-4 text-center">
           <h2 className="headline-medium">
-            "Ready to take the next step in your home buying journey?!
+            Ready to take the next step in your home buying journey?!
           </h2>
           <p className="max-w-xl mx-auto body-large">
             Contact us today to speak with one of our experienced real estate

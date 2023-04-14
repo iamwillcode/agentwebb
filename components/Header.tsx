@@ -7,8 +7,9 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Transactions', href: "/transactions" },
+  { name: 'Resources', href: "/resources" },
   { name: 'Blog', href: '#' },
-  { name: 'Contact Us', href: '#' },
+  { name: 'Properties', href: '#' },
 ]
 
 export default function Header() {
@@ -18,7 +19,7 @@ export default function Header() {
       <nav className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">AgentWebb</span>
             <Logo classNames="fill-current text-black" />
           </Link>
         </div>
@@ -40,9 +41,9 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="font-medium body-medium">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          <Link href="/contact" className="font-medium body-medium">
+            Contact <span aria-hidden="true">&rarr;</span>
+          </Link>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -76,12 +77,12 @@ export default function Header() {
                 ))}
               </div>
               <div className="py-6">
-                <a
+                <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
-                </a>
+                  Contact
+                </Link>
               </div>
             </div>
           </div>
