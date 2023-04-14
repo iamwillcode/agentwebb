@@ -7,7 +7,6 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Transactions', href: "/transactions" },
-  { name: 'Resources', href: "/resources" },
   { name: 'Blog', href: '#' },
   { name: 'Properties', href: '#' },
 ]
@@ -41,8 +40,8 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/contact" className="font-medium body-medium">
-            Contact <span aria-hidden="true">&rarr;</span>
+          <Link href="/resources" className="font-medium body-medium">
+            View Resources <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
@@ -77,11 +76,8 @@ export default function Header() {
                 ))}
               </div>
               <div className="py-6">
-                <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Contact
+                <Link href="/resources" className="font-medium body-medium">
+                  View Resources <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
             </div>
