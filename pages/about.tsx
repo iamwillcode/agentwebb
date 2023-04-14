@@ -76,7 +76,7 @@ function Biography() {
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
         <div className="">
           <div className="w-full h-[500px] relative">
-            <Image fill quality={40} src="/dummy-image.png" alt="" className="object-cover object-center " />
+            <Image fill quality={40} src="/media/agentwebb.webp" alt="" className="object-cover object-center rounded-2xl" />
           </div>
           <ul role="list" className="flex items-center w-full space-x-4 text-center">
             {items.map((item) => (

@@ -62,13 +62,13 @@ export default function index() {
                       </a>
                     </div>
                   </div>
-                  <div className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 relative">
+                  <div className="mt-10 aspect-[6/5] w-full max-w-lg  object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 relative">
                     <Image
                       fill
                       quality={40}
-                      src="/dummy-image.png"
+                      src="/media/hero.webp"
                       alt="placehodler iamge"
-                      className="object-cover object-center "
+                      className="object-cover object-center rounded-2xl"
                     />
                   </div>
                 </div>
