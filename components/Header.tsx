@@ -7,8 +7,8 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Transactions', href: "/transactions" },
-  { name: 'Blog', href: '#' },
-  { name: 'Properties', href: '#' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Properties', href: '/properties' },
 ]
 
 export default function Header() {
@@ -19,7 +19,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">AgentWebb</span>
-            <Logo classNames="fill-current text-black" />
+            <Logo classNames="fill-primary-700 text-black" />
           </Link>
         </div>
         <div className="flex lg:hidden">
