@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import BlogCard from "@/components/BlogCard";
+import Blog_Card from "@/components/Blog_Card";
 import {
   HiOutlineSearch,
   HiOutlineFire,
   HiOutlineDeviceTablet,
 } from "react-icons/hi";
 import Image from "next/image";
+import { dummyBlogPosts } from "@/lib/data";
 
 const items = [
   { id: 1, headline: "Feature 01" },
@@ -214,10 +215,16 @@ export default function index() {
               <p className="body-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsam quae natus dolores laborum adipisci nulla sit dignissimos quos unde?</p>
             </div>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              <BlogCard title="Real Estate Made Simple" body="Don't let the complexities of buying and selling property overwhelm you. With our unbiased and comprehensive real estate resource, you'll have all the information you need to navigate the process.." linkName="View Article" link="/blog/project-slug" />
-              <BlogCard title="Real Estate Made Simple" body="Don't let the complexities of buying and selling property overwhelm you. With our unbiased and comprehensive real estate resource, you'll have all the information you need to navigate the process.." linkName="View Article" link="/blog/project-slug" />
-              <BlogCard title="Real Estate Made Simple" body="Don't let the complexities of buying and selling property overwhelm you. With our unbiased and comprehensive real estate resource, you'll have all the information you need to navigate the process.." linkName="View Article" link="/blog/project-slug" />
-            </div>
+            {dummyBlogPosts.map((post) => (
+            <Blog_Card
+              key={post.id}
+              title={post.title}
+              description={post.description}
+              imageUrl={post.imageUrl}
+              linkUrl={post.linkUrl}
+              buttonLabel="Read More"
+            />
+          ))}            </div>
           </section>
         </div>
       </main>
