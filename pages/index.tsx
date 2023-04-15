@@ -221,7 +221,7 @@ export default function index() {
               title={post.title}
               description={post.description}
               imageUrl={post.imageUrl}
-              linkUrl={post.linkUrl}
+              linkUrl={post.id.toString()}
               buttonLabel="Read More"
             />
           ))}            </div>
