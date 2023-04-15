@@ -96,7 +96,7 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="wrapper">
+      <div className="container p-6 mx-auto">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
           <Logo classNames="fill-current text-black" />
