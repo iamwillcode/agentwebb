@@ -139,9 +139,9 @@ function ContentCentered() {
             </h2>
             <p>
               Think about why you want to buy a home. Is it because you need
-              more space for your growing family? Or maybe you're tired of
-              renting and want to build equity in a property that's truly yours.
-              Whatever your reasons, make sure they're sound and not driven by
+              more space for your growing family? Or maybe you&#39;re tired of
+              renting and want to build equity in a property that&#39;s truly yours.
+              Whatever your reasons, make sure they&#39;re sound and not driven by
               impulse or peer pressure.
             </p>
           </li>
@@ -150,7 +150,7 @@ function ContentCentered() {
               Do you presently own a home or are you a new home buyer?
             </h2>
             <p>
-              If you're a new home buyer, congratulations! This information is
+              If you&#39;re a new home buyer, congratulations! This information is
               especially important for you to consider
             </p>
           </li>
@@ -160,7 +160,7 @@ function ContentCentered() {
             </h2>
             <p>
               Buying a home is a big investment, and you want to make sure
-              you're financially prepared for it. Ideally, you should have at
+              you&#39;re financially prepared for it. Ideally, you should have at
               least 10% of the purchase price saved for a down payment, as well
               as enough money to cover closing costs, moving expenses, and any
               unexpected repairs that may come up. Be sure to also consider your
@@ -170,7 +170,7 @@ function ContentCentered() {
           </li>
           <li className="space-y-1">
             <h2>
-              There's a big initial investment involved.
+              There&#39;s a big initial investment involved.
             </h2>
             <p>
               Buying a home requires a significant upfront investment, including
@@ -183,19 +183,19 @@ function ContentCentered() {
               Can you handle the debt?
             </h2>
             <p>
-              Taking on a mortgage is a big responsibility, and you'll want to
+              Taking on a mortgage is a big responsibility, and you&#39;ll want to
               make sure you can comfortably afford your monthly payments.
               Consider your income, expenses, and other debts to determine if
-              you're ready to take on a mortgage.
+              you&#39;re ready to take on a mortgage.
             </p>
           </li>
           <li className="space-y-1">
             <h2>
-              How's your credit rating?
+              How&#39;s your credit rating?
             </h2>
             <p>
               Your credit score will play a big role in determining whether you
-              qualify for a mortgage and what interest rate you'll receive. If
+              qualify for a mortgage and what interest rate you&#39;ll receive. If
               your credit score is low, work on improving it before applying for
               a mortgage.
             </p>
@@ -205,7 +205,7 @@ function ContentCentered() {
               Are you better off renting?
             </h2>
             <p>
-              Owning a home can be a great investment, but it's not for
+              Owning a home can be a great investment, but it&#39;s not for
               everyone. Consider your lifestyle and future plans to determine if
               renting or owning makes more sense for you.
             </p>
@@ -215,7 +215,7 @@ function ContentCentered() {
               Will you be sticking around for a while?
             </h2>
             <p>
-              Buying a home is a long-term commitment, and you'll want to make
+              Buying a home is a long-term commitment, and you&#39;ll want to make
               sure you plan to stay put for at least a few years. Otherwise, you
               may not recoup your initial investment in the form of home equity.
             </p>
@@ -225,7 +225,7 @@ function ContentCentered() {
               Buying decreases ease of mobility?
             </h2>
             <p>
-              Once you own a home, it's harder to pick up and move whenever you
+              Once you own a home, it&#39;s harder to pick up and move whenever you
               want. Consider your future plans and whether owning a home will
               fit in with them.
             </p>
@@ -254,7 +254,7 @@ function ContentCentered() {
           </li>
           <li className="space-y-1">
             <h2>
-              What's happening in your market?
+              What&#39;s happening in your market?
             </h2>
             <p>
               Finally, make sure you understand the local real estate market and
