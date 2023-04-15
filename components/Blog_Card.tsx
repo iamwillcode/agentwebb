@@ -28,7 +28,7 @@ export default function Blog_Card({
               fill
               src={imageUrl}
               alt=""
-              className="object-cover rounded"
+              className="object-cover object-center rounded"
             />
           </div>
           <h2 className="mt-4 font-bold title-medium">{title}</h2>
