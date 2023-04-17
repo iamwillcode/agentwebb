@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useState } from "react";
+import TableOfContents from "@/components/TableOfContents";
+import CallToAction from "@/components/CallToAction";
 import Image from "next/image";
-import Link from "next/link";
+import { decidingToBuy, decidingToSell } from "@/lib/data";
 
 export default function ProgramSlug() {
   return (
@@ -13,8 +14,8 @@ export default function ProgramSlug() {
       </Head>
       <Header />
       <main className="py-32">
-        <div className="container grid gap-8 p-4 mx-auto lg:grid-cols-4">
-          <div className="grid-cols-1 space-y-4">
+        <div className="container flex flex-col gap-16 mx-auto lg:flex-row">
+          <div className="w-full space-y-4 lg:w-2/4">
             <TableOfContents programs={decidingToBuy} />
             <TableOfContents programs={decidingToSell} />
           </div>
@@ -23,83 +24,12 @@ export default function ProgramSlug() {
           </div>
         </div>
       </main>
-      <SignUpToProgram />
+      <CallToAction Headline="Ready to take the next step in your home buying journey?!" Supporting="Contact us today to speak with one of our experienced real estate professionals and get started on finding your dream home." />
       <Footer />
     </>
   );
 }
 
-type Program = {
-  id: number;
-  title: string;
-};
-
-type TableOfContentsProps = {
-  programs: Program[];
-};
-const decidingToBuy = [
-  { id: 1, title: "Deciding To Buy" },
-  { id: 2, title: "Sell Before You Buy" },
-  { id: 3, title: "How Much Can you afford" },
-  { id: 4, title: "Sellecting an agent" },
-  { id: 5, title: "Buyers RE. Contract" },
-  { id: 6, title: "Searching Properties" },
-  { id: 7, title: "Visiting Properties" },
-  { id: 8, title: "making The Offer Firm" },
-  { id: 9, title: "Lawyers and closing" },
-  { id: 9, title: "Packing & Moving" },
-];
-const decidingToSell = [
-  { id: 1, title: "Deciding To Sell" },
-  { id: 2, title: "Researching Value" },
-  { id: 3, title: "Staging Your Property" },
-  { id: 4, title: "Sellecting an agent" },
-  { id: 5, title: "Sellers RE. Contract" },
-  { id: 6, title: "Repairs & Renos" },
-  { id: 7, title: "Staging" },
-  { id: 8, title: "Showing" },
-  { id: 9, title: "Negotiating" },
-  { id: 9, title: "Firming The Offer" },
-  { id: 9, title: "Lawyers and Closing deals" },
-  { id: 9, title: "Packing & Moving" },
-];
-
-function TableOfContents({ programs }: TableOfContentsProps) {
-  const [showList, setShowList] = useState(false);
-
-  const toggleList = () => {
-    setShowList(!showList);
-  };
-
-  return (
-    <section className="w-full p-4 bg-gray-100 rounded ">
-      <div className="flex flex-col gap-2 lg:flex-col lg:items-start lg:ml-4">
-        <button className="text-gray-700 title-medium " onClick={toggleList}>
-          Table Of Contents
-          <span className="ml-2 lg:hidden">{showList ? "▲" : "▼"}</span>
-        </button>
-        <div className="flex flex-col items-start space-y-2 lg:items-stretch lg:flex-row lg:space-y-0 lg:w-auto">
-          <ul
-            role="list"
-            aria-label="Table of Contents"
-            className={`${
-              showList ? "block" : "hidden"
-            } lg:block flex flex-col items-start space-y-2`}
-          >
-            {programs.map((program) => (
-              <li
-                key={program.id}
-                className="w-full p-2 prose text-gray-900 hover:bg-gray-200/30 hover:cursor-pointer active:opacity-80"
-              >
-                {program.title}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 // A Link
 function ContentCentered() {
@@ -267,34 +197,4 @@ function ContentCentered() {
     </div>
   );
 }
-function SignUpToProgram() {
-  return (
-    <div className="bg-yellow-500/30">
-      <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="max-w-2xl mx-auto space-y-4 text-center">
-          <h2 className="headline-medium">
-            Ready to take the next step in your home buying journey?!
-          </h2>
-          <p className="max-w-xl mx-auto body-large">
-            Contact us today to speak with one of our experienced real estate
-            professionals and get started on finding your dream home.
-          </p>
-          <div className="flex items-center justify-center mt-10 gap-x-6">
-            <Link
-              href="/signup"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-yellow-600 shadow-sm hover:bg-yellow-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Get started
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-semibold leading-6 text-white"
-            >
-              Call Us <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+
