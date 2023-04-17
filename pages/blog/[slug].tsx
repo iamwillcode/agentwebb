@@ -1,5 +1,3 @@
-import Head from "next/head";
-// End Of Next.js Special Scripts.
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 // End Of Imported React Components.
