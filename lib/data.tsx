@@ -58,7 +58,7 @@ export const decidingToBuy = [
 export const decidingToSell = [
   { id: 1, title: "Deciding To Sell" },
   { id: 2, title: "Researching Value" },
-  { id: 3, title: "Staging Your Property" },
+  { id: 3, title: "Preparing Your Property" },
   { id: 4, title: "Sellecting an agent" },
   { id: 5, title: "Sellers RE. Contract" },
   { id: 6, title: "Repairs & Renos" },
