@@ -99,9 +99,9 @@ function Biography() {
 function CompanYFeatures() {
   return (
     <>
-      <section className="px-4 py-24 mx-auto max-w-7xl">
+      <section className="px-4 py-24">
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
-          <div>
+          <div className="max-w-prose">
             <h2 className="mb-4 font-extrabold leading-snug capitalize headline-large">
               unbiased Information about the Real Estate transaction Broken Down
               In One Place Made For You
@@ -112,7 +112,7 @@ function CompanYFeatures() {
               allow you to quickly find any data you#&39;re looking for.
             </p>
           </div>
-          <div className="relative w-full h-full py-48">
+          <div className="relative w-full h-full py-56">
             <Image
               fill
               quality={70}
@@ -123,7 +123,7 @@ function CompanYFeatures() {
           </div>
         </div>
         <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
-          <div className="order-none md:order-2">
+          <div className="order-none md:order-2 max-w-prose">
             <h2 className="mb-4 font-extrabold leading-snug capitalize headline-large">
               20+ Years Of Experience In the Realestate Market!
             </h2>
@@ -133,7 +133,7 @@ function CompanYFeatures() {
               and build advanced and reliable products yourself from scratch.
             </p>
           </div>
-          <div className="relative w-full h-full py-48">
+          <div className="relative w-full h-full py-56">
             <Image
               fill
               quality={70}

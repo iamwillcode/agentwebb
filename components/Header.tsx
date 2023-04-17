@@ -15,11 +15,11 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <header className="absolute inset-x-0 top-0 z-50 bg-gray-100 shadow">
-      <nav className="container flex items-center justify-between p-6 mx-auto" aria-label="Global">
+      <nav className="flex items-center justify-between py-6 wrapper" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">AgentWebb</span>
-            <Logo classNames="fill-primary-700 text-black" />
+            <Logo classNames="fill-gray-700 text-black" />
           </Link>
         </div>
         <div className="flex lg:hidden">

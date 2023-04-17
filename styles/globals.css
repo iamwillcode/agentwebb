@@ -27,7 +27,7 @@
     @apply body-large;
   }
   .wrapper {
-    @apply p-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+    @apply container p-4 mx-auto sm:px-6 lg:px-8;
   }
   .display-large {
     @apply text-[3.563rem] leading-tight tracking-wide font-extrabold capitalize
