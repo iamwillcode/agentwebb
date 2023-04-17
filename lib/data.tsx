@@ -50,6 +50,8 @@ export const decidingToBuy = [
   { id: 6, title: "Searching Properties" },
   { id: 7, title: "Visiting Properties" },
   { id: 8, title: "making The Offer Firm" },
+  { id: 8, title: "Negotiating The Offer" },
+  { id: 8, title: "Closing The Purchase" },
   { id: 9, title: "Lawyers and closing" },
   { id: 9, title: "Packing & Moving" },
 ];
