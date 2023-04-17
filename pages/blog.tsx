@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/blogAPI" && "https://agentwebb.vercel.app/api/blogAPI");
+  const res = await fetch("https://agentwebb-justin-bento.vercel.app/api/blogAPI");
   const data = await res.json();
   return {
     props: { articles: data },
