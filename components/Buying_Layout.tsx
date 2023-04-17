@@ -1,6 +1,7 @@
 import TableOfContents from "./TableOfContents";
-import {decidingToBuy} from "@/lib/data";
+import { decidingToBuy } from "@/lib/data";
 import clsx from 'clsx'
+import Breadcrumb from "./Breadcrumb";
 
 export default function Buying_Layout({ className, ...props }: any) {
   return (
@@ -8,7 +9,10 @@ export default function Buying_Layout({ className, ...props }: any) {
       <section className="">
         <TableOfContents programs={decidingToBuy} />
       </section>
-      <article className="prose max-w-7xl" {...props}  />
+      <div className="flex flex-col">
+        <Breadcrumb />
+        <article className="prose max-w-7xl" {...props} />
+      </div>
     </main>
   )
 }
