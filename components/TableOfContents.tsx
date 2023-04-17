@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 type Program = {
@@ -36,7 +37,7 @@ export default function TableOfContents({ programs }: TableOfContentsProps) {
                 key={program.id}
                 className="w-full p-2 prose text-gray-900 hover:bg-gray-200/30 hover:cursor-pointer active:opacity-80"
               >
-                {program.title}
+                <Link href={program.title.toString().toLowerCase().replace(/\s+/g,"-")}>{program.title}</Link>
               </li>
             ))}
           </ul>
