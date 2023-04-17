@@ -40,3 +40,30 @@ export const dummyBlogPosts: BlogPost[] = [
     imageUrl: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=80",
   },
 ];
+
+export const decidingToBuy = [
+  { id: 1, title: "Deciding To Buy" },
+  { id: 2, title: "Sell Before You Buy" },
+  { id: 3, title: "How Much Can you afford" },
+  { id: 4, title: "Sellecting an agent" },
+  { id: 5, title: "Buyers RE. Contract" },
+  { id: 6, title: "Searching Properties" },
+  { id: 7, title: "Visiting Properties" },
+  { id: 8, title: "making The Offer Firm" },
+  { id: 9, title: "Lawyers and closing" },
+  { id: 9, title: "Packing & Moving" },
+];
+export const decidingToSell = [
+  { id: 1, title: "Deciding To Sell" },
+  { id: 2, title: "Researching Value" },
+  { id: 3, title: "Staging Your Property" },
+  { id: 4, title: "Sellecting an agent" },
+  { id: 5, title: "Sellers RE. Contract" },
+  { id: 6, title: "Repairs & Renos" },
+  { id: 7, title: "Staging" },
+  { id: 8, title: "Showing" },
+  { id: 9, title: "Negotiating" },
+  { id: 9, title: "Firming The Offer" },
+  { id: 9, title: "Lawyers and Closing deals" },
+  { id: 9, title: "Packing & Moving" },
+];
