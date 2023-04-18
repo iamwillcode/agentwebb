@@ -9,6 +9,7 @@ import {
 } from "react-icons/hi";
 import Image from "next/image";
 import { dummyBlogPosts } from "@/lib/data";
+import Link from "next/link";
 
 const items = [
   { id: 1, headline: "Feature 01" },
@@ -48,12 +49,12 @@ export default function index() {
                       alert to any potential red flags.
                     </p>
                     <div className="flex items-center mt-10 gap-x-6">
-                      <a
-                        href="#"
+                      <Link
+                        href="/transactions"
                         className="rounded-md bg-slate-600 px-3.5 py-2.5 body-small uppercase tracking-wide text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
                       >
                         View Documentation
-                      </a>
+                      </Link>
                       <a
                         href="#"
                         className="tracking-wide uppercase text-slate-900 body-small"

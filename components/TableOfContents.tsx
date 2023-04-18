@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 type Program = {
@@ -17,7 +18,7 @@ export default function TableOfContents({ programs }: TableOfContentsProps) {
   };
 
   return (
-    <section className="w-full p-4 bg-gray-100 rounded ">
+    <section className="w-full p-4 border rounded bg-gray-100/50 ">
       <div className="flex flex-col gap-2 lg:flex-col lg:items-start lg:ml-4">
         <button className="text-gray-700 title-medium " onClick={toggleList}>
           Table Of Contents
@@ -32,11 +33,8 @@ export default function TableOfContents({ programs }: TableOfContentsProps) {
             } lg:block flex flex-col items-start space-y-2`}
           >
             {programs.map((program) => (
-              <li
-                key={program.id}
-                className="w-full p-2 prose text-gray-900 hover:bg-gray-200/30 hover:cursor-pointer active:opacity-80"
-              >
-                {program.title}
+              <li key={program.id} className="p-2.5 rounded">
+                <Link href={program.title.toString().toLowerCase().replace(/\s+/g,"-")} className="px-2 prose capitalize transition-all border-l-2 hover:text-yellow-700 hover:border-l active:border-yellow-700">{program.title}</Link>
               </li>
             ))}
           </ul>

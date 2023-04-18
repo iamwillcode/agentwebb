@@ -1,32 +1,34 @@
 import Blog_Card from "@/components/Blog_Card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/blogAPI");
-  const data = await res.json();
-  return {
-    props: { articles: data },
-  };
+  try {
+    const res = await fetch(
+      "https://agentwebb-justin-bento.vercel.app/api/blog"
+    );
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    const data = await res.json();
+    return {
+      props: { articles: data },
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      props: { articles: [] },
+    };
+  }
 };
 
 export default function Blog({ articles }: any) {
-  const artcile_cards = articles.map((article: any) => (
-    <Blog_Card
-      key={article.id}
-      title={article.title}
-      description={article.body}
-      buttonLabel="View More"
-      imageUrl={article.media}
-      linkUrl={`/blog/${article.title
-        .toString()
-        .toLowerCase()
-        .split(" ")
-        .join("-")}`}
-    />
-  ));
   return (
     <>
+    <Head>
+      <title>Blog - AgentWebb</title>
+    </Head>
       <Header />
       <main className="container p-4 py-32 mx-auto">
         <section className="max-w-5xl space-y-3">
@@ -42,7 +44,20 @@ export default function Blog({ articles }: any) {
           </p>
         </section>
         <section className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
-          {artcile_cards}
+          {articles.map((article: any) => (
+            <Blog_Card
+              key={article.id}
+              title={article.title}
+              description={article.body}
+              buttonLabel="View More"
+              imageUrl={article.media}
+              linkUrl={`/blog/${article.title
+                .toString()
+                .toLowerCase()
+                .split(" ")
+                .join("-")}`}
+            />
+          ))}
         </section>
       </main>
       <Footer />
