@@ -6,7 +6,7 @@ import Head from "next/head";
 export const getStaticProps = async () => {
   try {
     const res = await fetch(
-      "https://agentwebb-justin-bento.vercel.app/api/blogAPI"
+      "https://agentwebb-justin-bento.vercel.app/api/blog"
     );
     if (!res.ok) {
       throw new Error("Failed to fetch data");
