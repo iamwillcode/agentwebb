@@ -2,33 +2,24 @@ import Blog_Card from "@/components/Blog_Card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import { client } from "@/sanityClient";
 
-export const getStaticProps = async () => {
-  try {
-    const res = await fetch(
-      "https://agentwebb-justin-bento.vercel.app/api/blog"
-    );
-    if (!res.ok) {
-      throw new Error("Failed to fetch data");
-    }
-    const data = await res.json();
-    return {
-      props: { articles: data },
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      props: { articles: [] },
-    };
-  }
-};
+export async function getStaticProps() {
+  const posts = await client.fetch(` *[_type == "post"] { _id, title, description, body, slug, "mainImage": mainImage.asset->url } `);
+  return {
+    props: {
+      posts,
+    },
+  };
+}
 
-export default function Blog({ articles }: any) {
+export default function Blog({ posts }: any) {
+  console.log(posts);
   return (
     <>
-    <Head>
-      <title>Blog - AgentWebb</title>
-    </Head>
+      <Head>
+        <title>Blog - AgentWebb</title>
+      </Head>
       <Header />
       <main className="container p-4 py-32 mx-auto">
         <section className="max-w-5xl space-y-3">
@@ -44,20 +35,19 @@ export default function Blog({ articles }: any) {
           </p>
         </section>
         <section className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
-          {articles.map((article: any) => (
-            <Blog_Card
-              key={article.id}
-              title={article.title}
-              description={article.body}
-              buttonLabel="View More"
-              imageUrl={article.media}
-              linkUrl={`/blog/${article.title
-                .toString()
-                .toLowerCase()
-                .split(" ")
-                .join("-")}`}
-            />
-          ))}
+          {posts.map((post: any) => {
+            return (
+              <Blog_Card
+                key={post._id}
+                title={post.title}
+                description={post.description}
+                buttonLabel="View More"
+                linkUrl={`/blog/${post.slug.current}`}
+                imageUrl={post.mainImage}
+              />
+            );
+          })}
+          <h1 className="title-medium"></h1>
         </section>
       </main>
       <Footer />

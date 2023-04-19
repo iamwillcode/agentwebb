@@ -20,10 +20,10 @@ export default function Blog_Card({
     <>
       <Link
         href={linkUrl}
-        className="transition-all border border-gray-200 rounded bg-gray-200/30 hover:border hover:bg-primary-200/20 hover:cursor-pointer"
+        className="transition-all border border-gray-200 rounded bg-gray-200/30 hover:border hover:bg-amber-200/20 hover:cursor-pointer"
       >
         <div className="p-4 px-6 py-6">
-          <div className="relative w-full h-48 bg-gray-300 ">
+          <div className="relative w-full h-56 bg-gray-300 ">
             <Image
               fill
               src={imageUrl}
@@ -32,7 +32,7 @@ export default function Blog_Card({
             />
           </div>
           <h2 className="mt-4 font-bold title-medium">{title}</h2>
-          <p className="mb-4 text-gray-500 body-medium">{description}</p>
+          <p className="mb-4 text-gray-500 body-medium line-clamp-3">{description}</p>
           <button
             type="button"
             className="px-2 py-1 text-xs font-semibold text-gray-900 rounded ring-1 ring-inset ring-gray-200"
