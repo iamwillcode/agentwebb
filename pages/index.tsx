@@ -27,12 +27,12 @@ export default function index() {
         <meta name="description" content="Offer unbiased insights into the real estate transactions, to help you, understand, identify potential red flags to help you make informed decisions." />
       </Head>
       <Header />
-      <main className="bg-slate-50">
+      <main className="bg-gray-50">
         <div className="py-32 space-y-32">
           <section className="wrapper">
-            <div className="relative overflow-hidden isolate bg-gradient-to-b from-slate-100/20 pt-14">
+            <div className="relative overflow-hidden isolate bg-gradient-to-b from-gray-100/20 pt-14">
               <div
-                className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-slate-50 shadow-xl shadow-slate-600/10 ring-1 ring-slate-50 sm:-mr-80 lg:-mr-96"
+                className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gray-50 shadow-xl shadow-gray-600/10 ring-1 ring-gray-50 sm:-mr-80 lg:-mr-96"
                 aria-hidden="true"
               />
               <div className="">
@@ -51,13 +51,13 @@ export default function index() {
                     <div className="flex items-center mt-10 gap-x-6">
                       <Link
                         href="/transactions"
-                        className="rounded-md bg-slate-600 px-3.5 py-2.5 body-small uppercase tracking-wide text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
+                        className="rounded-md bg-amber-300 px-3.5 py-2.5 body-small uppercase tracking-wide  hover:bg-amber-300/70  transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
                       >
                         View Documentation
                       </Link>
                       <a
                         href="#"
-                        className="tracking-wide uppercase text-slate-900 body-small"
+                        className="tracking-wide uppercase text-amber-700 body-small"
                       >
                         Get In Touch With An Agent{" "}
                         <span aria-hidden="true">→</span>
@@ -75,14 +75,14 @@ export default function index() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-slate-50 sm:h-32" />
+              <div className="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-gray-50 sm:h-32" />
             </div>
           </section>
           {/* SECTION END: 01 :: HERO  */}
           <section className="wrapper">
             <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3 ">
               <div>
-                <HiOutlineSearch className="w-8 h-8 mb-4" />
+                <HiOutlineSearch className="w-8 h-8 mb-4 text-amber-600" />
                 <h2 className="mb-3 capitalize title-large">
                   Real Estate Made Simple
                 </h2>
@@ -94,7 +94,7 @@ export default function index() {
                 </p>
               </div>
               <div>
-                <HiOutlineFire className="w-8 h-8 mb-4" />
+                <HiOutlineFire className="w-8 h-8 mb-4 text-amber-600" />
                 <h2 className="mb-3 capitalize title-large">
                   Get Ahead of the Game!
                 </h2>
@@ -106,7 +106,7 @@ export default function index() {
                 </p>
               </div>
               <div>
-                <HiOutlineDeviceTablet className="w-8 h-8 mb-4" />
+                <HiOutlineDeviceTablet className="w-8 h-8 mb-4 text-amber-600" />
                 <h2 className="mb-3 capitalize title-large">
                   Power Available On Finger Tips
                 </h2>
@@ -121,26 +121,26 @@ export default function index() {
           </section>
           {/* SECTION END: 02 :: FEATURES  */}
           <section className="wrapper rounded-3xl">
-            <div className="bg-slate-700 rounded-3xl">
+            <div className="bg-amber-400 rounded-3xl">
               <div className="px-6 py-24 sm:px-6 sm:py-24 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center">
-                  <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
                     Boost your productivity.
                     <br />
                     Start using our app today.
                   </h3>
-                  <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-slate-200">
+                  <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-gray-700">
                     Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
                     commodo do ea.
                   </p>
                   <div className="flex items-center justify-center mt-10 gap-x-6">
                     <a
                       href="#"
-                      className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-600 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      className="rounded-md bg-black text-white px-3.5 py-2.5 text-sm font-semibold  shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
                       Get started
                     </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-white">
+                    <a href="#" className="text-sm font-semibold leading-6 ">
                       Learn more <span aria-hidden="true">→</span>
                     </a>
                   </div>
@@ -171,7 +171,7 @@ export default function index() {
           </section>
           {/* SECTION END: 04 :: CALL TO ACTION  */}
           <section className="wrapper">
-            <div className="py-16 bg-slate-700 sm:py-24 lg:py-32 rounded-3xl">
+            <div className="py-16 bg-gray-700 sm:py-24 lg:py-32 rounded-3xl">
               <div className="grid grid-cols-1 gap-10 px-6 mx-auto max-w-7xl lg:grid-cols-12 lg:gap-8 lg:px-8">
                 <div className="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
                   <h5 className="inline sm:block lg:inline xl:block">Want product news and updates?</h5>{' '}
@@ -193,14 +193,14 @@ export default function index() {
                     />
                     <button
                       type="submit"
-                      className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-600 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
                       Subscribe
                     </button>
                   </div>
                   <p className="mt-4 text-sm leading-6 text-gray-300">
                     We care about your data. Read our{' '}
-                    <a href="#" className="font-semibold text-white hover:text-slate-50">
+                    <a href="#" className="font-semibold text-white hover:text-gray-50">
                       privacy&nbsp;policy
                     </a>
                     .
