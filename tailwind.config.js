@@ -16,6 +16,7 @@ module.exports = {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        // Shades Of Primary Colour (West Side Yellow) For Agent Webb 
         primary: {
           50: "#fffbea",
           100: "#fff1c5",
