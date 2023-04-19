@@ -20,7 +20,7 @@ export default function Blog_Card({
     <>
       <Link
         href={linkUrl}
-        className="transition-all border border-gray-200 rounded bg-gray-200/30 hover:border hover:bg-primary-200/20 hover:cursor-pointer"
+        className="transition-all border border-gray-200 rounded bg-gray-200/30 hover:border hover:bg-amber-200/20 hover:cursor-pointer"
       >
         <div className="p-4 px-6 py-6">
           <div className="relative w-full h-48 bg-gray-300 ">
