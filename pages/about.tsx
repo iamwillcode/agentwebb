@@ -53,7 +53,7 @@ function Biography() {
             {items.map((item) => (
               <li
                 key={item.id}
-                className="w-full p-3 mt-4 overflow-hidden bg-slate-100 sm:rounded-md sm:px-6"
+                className="w-full p-3 mt-4 overflow-hidden bg-primary-100 sm:rounded-md sm:px-6"
               >
                 <span className="body-small">{item.info}</span>
               </li>
