@@ -51,13 +51,13 @@ export default function index() {
                     <div className="flex items-center mt-10 gap-x-6">
                       <Link
                         href="/transactions"
-                        className="rounded-md bg-amber-300 px-3.5 py-2.5 body-small uppercase tracking-wide  hover:bg-amber-300/70  transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
+                        className="rounded-md bg-primary-300 px-3.5 py-2.5 body-small uppercase tracking-wide  hover:bg-primary-300/70  transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                       >
                         View Documentation
                       </Link>
                       <a
                         href="#"
-                        className="tracking-wide uppercase text-amber-700 body-small"
+                        className="tracking-wide uppercase text-primary-700 body-small"
                       >
                         Get In Touch With An Agent{" "}
                         <span aria-hidden="true">→</span>
@@ -82,7 +82,7 @@ export default function index() {
           <section className="wrapper">
             <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3 ">
               <div>
-                <HiOutlineSearch className="w-8 h-8 mb-4 text-amber-600" />
+                <HiOutlineSearch className="w-8 h-8 mb-4 text-primary-600" />
                 <h2 className="mb-3 capitalize title-large">
                   Real Estate Made Simple
                 </h2>
@@ -94,7 +94,7 @@ export default function index() {
                 </p>
               </div>
               <div>
-                <HiOutlineFire className="w-8 h-8 mb-4 text-amber-600" />
+                <HiOutlineFire className="w-8 h-8 mb-4 text-primary-600" />
                 <h2 className="mb-3 capitalize title-large">
                   Get Ahead of the Game!
                 </h2>
@@ -106,7 +106,7 @@ export default function index() {
                 </p>
               </div>
               <div>
-                <HiOutlineDeviceTablet className="w-8 h-8 mb-4 text-amber-600" />
+                <HiOutlineDeviceTablet className="w-8 h-8 mb-4 text-primary-600" />
                 <h2 className="mb-3 capitalize title-large">
                   Power Available On Finger Tips
                 </h2>
@@ -121,7 +121,7 @@ export default function index() {
           </section>
           {/* SECTION END: 02 :: FEATURES  */}
           <section className="wrapper rounded-3xl">
-            <div className="bg-amber-400 rounded-3xl">
+            <div className="bg-primary-400 rounded-3xl">
               <div className="px-6 py-24 sm:px-6 sm:py-24 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center">
                   <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
